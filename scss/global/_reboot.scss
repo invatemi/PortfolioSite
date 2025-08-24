@@ -15,15 +15,16 @@
 /* Basic reset for the body element */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+  font-family: "Switzer", "Arial", serif;
   font-size: 1rem;
+  font-weight: 400;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff;
   -webkit-text-size-adjust: 100%; /* Adjust text size for better readability on iOS */
-  -webkit-tap-highlight-color: #000; /* Highlight color on tap for better user experience on touch devices */
+  -webkit-tap-highlight-color: transparent; /* Highlight color on tap for better user experience on touch devices */
 }
 
 /* Horizontal rule styling */
