@@ -1,14 +1,11 @@
-import Swiper from "../vendor/Swiper";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Swiper } from "../vendor/Swiper.js";
 
-// Now you can use Swiper
-const swiper = new Swiper(".swiper", {
-  // Install modules
-  modules: [Navigation, Pagination, Scrollbar],
-  speed: 500,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3.5,
+  spaceBetween: 15,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
   },
-  // ...
 });
