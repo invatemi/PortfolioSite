@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/components/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <!-- логотип -->
+                <p class="header-logo">
+                    <span class="header-logo__txt">Juan Simmons</span>
+                    <span class="header-logo__txt header-logo__txt--tm">tm</span>
+                </p>
+                <!-- список работ -->
+                 <div class="header__inner">
+                    <nav class="header-nav">
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a href="#" class="header-item__txt">Work</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#" class="header-item__txt">Service</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#" class="header-item__txt">Testimonial</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- кнопка контакты -->
+                    <button class="btn btn--contact" type="button">Contact</button>
+                 </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-author">
+            <div class="container">
+                <div class="about-author__wrapper">
+                    <p class="about-author__txt">
+                        <span class="about-author__txt-black">Hi,</span>
+                        <img src="./assets/img/author.jpg" alt="картинка автора" width="160" height="96">
+                        <span class="about-author__txt-black">I’m </span>
+                        <span class="about-author__txt-white">Juan Website Designer </span>
+                        <span class="about-author__txt-black">Based in Jakarta</span>
+                    </p>
+
+                    <button class="btn btn--hire" type="button">Hire Me</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <div class="work__wrapper">
+                    <div class="work__inner-txt">
+                        <h2 class="work__inner-titel">Work</h2>
+                        <button class="btn btn--view" type="button">View All</button>
+                    </div>
+
+                    <ul class="work__list">
+                        <li class="work__item">
+                            <div class="card-work">
+                                <img src="./assets/img/card-img-1.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
+                                    <p class="card-work__txt">
+                                        <span class="card-work__up">Project</span>
+                                        <span class="card-work__bottom">Mobile App</span>
+                                    </p>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                            <div class="card-work">
+                                <img src="./assets/img/card-img-2.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
+                                <div class="card-work__inner">
+                                    <p class="card-work__txt">
+                                        <span class="card-work__up">Project</span>
+                                        <span class="card-work__bottom">Mobile App</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                            <div class="card-work">
+                                <img src="./assets/img/card-img-3.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
+                                <div class="card-work__inner">
+                                    <p class="card-work__txt">
+                                        <span class="card-work__up">Project</span>
+                                        <span class="card-work__bottom">Mobile App</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                            <div class="card-work">
+                                <img src="./assets/img/card-img-4.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
+                                <div class="card-work__inner">
+                                    <p class="card-work__txt">
+                                        <span class="card-work__up">Project</span>
+                                        <span class="card-work__bottom">Mobile App</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__wrapper">
+                    <h2 class="services__titel">Services</h2>
+
+                    <ul class="services-list">
+                        <li class="services-item">
+                            <div class="card-services">
+                                <p class="card-services__number">01</p>
+                                <div class="card-services__inner">
+                                    <h3 class="card-services__titel">Web Design</h3>
+                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-item">
+                            <div class="card-services">
+                                <p class="card-services__number">01</p>
+                                <div class="card-services__inner">
+                                    <h3 class="card-services__titel">Web Design</h3>
+                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-item">
+                            <div class="card-services">
+                                <p class="card-services__number">01</p>
+                                <div class="card-services__inner">
+                                    <h3 class="card-services__titel">Web Design</h3>
+                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="reviews__titel">Reviews</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card-reviews">
+                                <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Suspendisse varius enim in eros"
+                                </p>
+                                <div class="card-reviews__inner">
+                                    <img class="card-reviwer__img" src="./assets/img/card-review.png" alt="картинка отзыва" width="56" height="56">
+                                    <p class="card-reviwer__txt-info">
+                                        <span class="card-reviwer__txt-name">Jordan Smith</span>
+                                        <span class="card-reviwer__txt-city">CEO, Google</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-reviews">
+                                <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Suspendisse varius enim in eros"
+                                </p>
+                                <div class="card-reviews__inner">
+                                    <img class="card-reviwer__img" src="./assets/img/card-review.png" alt="картинка отзыва" width="56" height="56">
+                                    <p class="card-reviwer__txt-info">
+                                        <span class="card-reviwer__txt-name">Jordan Smith</span>
+                                        <span class="card-reviwer__txt-city">CEO, Google</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-reviews">
+                                <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Suspendisse varius enim in eros"
+                                </p>
+                                <div class="card-reviews__inner">
+                                    <img class="card-reviwer__img" src="./assets/img/card-review.png" alt="картинка отзыва" width="56" height="56">
+                                    <p class="card-reviwer__txt-info">
+                                        <span class="card-reviwer__txt-name">Jordan Smith</span>
+                                        <span class="card-reviwer__txt-city">CEO, Google</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-reviews">
+                                <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Suspendisse varius enim in eros"
+                                </p>
+                                <div class="card-reviews__inner">
+                                    <img class="card-reviwer__img" src="./assets/img/card-review.png" alt="картинка отзыва" width="56" height="56">
+                                    <p class="card-reviwer__txt-info">
+                                        <span class="card-reviwer__txt-name">Jordan Smith</span>
+                                        <span class="card-reviwer__txt-city">CEO, Google</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-reviews">
+                                <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Suspendisse varius enim in eros"
+                                </p>
+                                <div class="card-reviews__inner">
+                                    <img class="card-reviwer__img" src="./assets/img/card-review.png" alt="картинка отзыва" width="56" height="56">
+                                    <p class="card-reviwer__txt-info">
+                                        <span class="card-reviwer__txt-name">Jordan Smith</span>
+                                        <span class="card-reviwer__txt-city">CEO, Google</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                </div>
+        </section>
+
+        <section class="find-me">
+            <div class="container">
+                <div class="finnd-me__wrapper">
+                    <p class="finnd-me__txt">Let’s create something together</p>
+                    <button class="btn btn--call" type="button">Book a Call</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-up">
+            <div class="cotainer">
+                <div class="footer-up__wrapper">
+                    <ul class="footer-up__list">
+                        <li class="footer-up__item">
+                            <a href="#" class="footer-up__txt">Instagram</a>
+                        </li>
+                        <li class="footer-up__item">
+                            <a href="#" class="footer-up__txt">Behance</a>
+                        </li>
+                        <li class="footer-up__item">
+                            <a href="#" class="footer-up__txt">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__wrapper">
+                    <p class="footer-bottom__author">Juan Simmons. Web Designer</p>
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item">
+                            <p class="footer-bottom__txt">Style Guide</p>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <p class="footer-bottom__txt">Licences</p>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <p class="footer-bottom__txt">Changelog</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

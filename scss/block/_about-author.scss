@@ -1,0 +1,42 @@
+.about-author{
+    background-color:#1A1A1A;
+    margin: 0;
+    padding: 0;
+}
+
+.about-author__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 122px 0 182px 0;
+}
+
+.about-author__txt{
+    display: block;
+    font-weight: 300;
+    font-size: 115px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin: 0;
+    padding: 0;
+    width: 973px;
+    height: 345px;
+}
+
+.about-author__txt-black{
+
+    font-weight: 300;
+    font-size: 115px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #5F5F5F;
+}
+
+.about-author__txt-white{
+
+    font-weight: 300;
+    font-size: 115px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}

@@ -1,0 +1,45 @@
+.card-services{
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    height: 335px;
+    padding: 29px 49px 50px 41px;
+    background-color: #232323;
+}
+
+.card-services__number{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.card-services__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.card-services__titel{
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.card-services__txt{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #ADADAD;
+}

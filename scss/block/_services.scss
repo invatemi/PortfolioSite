@@ -1,0 +1,39 @@
+.services{
+    margin: 0;
+    padding: 157px 0;
+    background-color:#1A1A1A;
+}
+
+.services__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services__titel{
+    font-weight: 300;
+    font-size: 115px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.services-item{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+}
