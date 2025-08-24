@@ -1,4 +1,24 @@
+// ---GLOBAL---
 @import "./global/mixins";
 @import "./global/normalize";
 @import "./global/variables";
 @import "./global/visually-hidden";
+@import "./global/container";
+@import "./global/fonts";
+@import "./global/reboot";
+
+// ---BLOCK---
+@import "./block/btn";
+@import "./block/custom-input";
+@import "./block/footer";
+@import "./block/header";
+@import "./block/main";
+@import "./block/about-author";
+@import "./block/work";
+@import "./block/card-work";
+@import "./block/card-services";
+@import "./block/services";
+@import "./block/card-reviews";
+@import "./block/reviews";
+@import "./block/swiper";
+@import "./block/find-me";

@@ -1,0 +1,50 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.btn--contact{
+    margin: 0;
+    padding: 12px 24px;
+}
+
+.btn--hire{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+
+    margin: 0;
+    background-color: #D94100;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+}
+
+.btn--view{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+    padding: 16px 32px;
+}
+
+.btn--call{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+    color: #FFFFFF;
+
+    margin: 0;
+    padding: 16px 32px;
+    background-color: #D94100;
+    border: none;
+
+}
