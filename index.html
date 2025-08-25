@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="./js/components/main.js"></script>
 </head>
@@ -21,18 +22,18 @@
                     <nav class="header-nav">
                         <ul class="header-list">
                             <li class="header-item">
-                                <a href="#" class="header-item__txt">Проекты</a>
+                                <a href="#work" class="header-item__txt">Проекты</a>
                             </li>
                             <li class="header-item">
-                                <a href="#" class="header-item__txt">Услуги</a>
+                                <a href="#services" class="header-item__txt">Услуги</a>
                             </li>
                             <li class="header-item">
-                                <a href="#" class="header-item__txt">Отзывы</a>
+                                <a href="#reviews" class="header-item__txt">Отзывы</a>
                             </li>
                         </ul>
                     </nav>
                     <!-- кнопка контакты -->
-                    <button class="btn btn--contact" type="button">Контакты</button>
+                    <a href="#call-back" class="btn btn--contact" type="button">Контакты</a>
                  </div>
             </div>
         </div>
@@ -50,7 +51,7 @@
                         <span class="about-author__txt-black">из города Воронеж</span>
                     </p>
 
-                    <button class="btn btn--hire" type="button">Связаться со мной</button>
+                    <a href="#call-back" class="btn btn--hire" type="button">Связаться со мной</a>
                 </div>
             </div>
         </section>
@@ -59,7 +60,7 @@
             <div class="container">
                 <div class="work__wrapper">
                     <div class="work__inner-txt">
-                        <h2 class="work__inner-titel">Проекты</h2>
+                        <h2 class="work__inner-titel" id="work">Проекты</h2>
                         <button class="btn btn--view" type="button">Показать все</button>
                     </div>
 
@@ -114,7 +115,7 @@
         <section class="services">
             <div class="container">
                 <div class="services__wrapper">
-                    <h2 class="services__titel">Services</h2>
+                    <h2 class="services__titel" id="services">Услуги</h2>
 
                     <ul class="services-list">
                         <li class="services-item">
@@ -151,7 +152,7 @@
 
         <section class="reviews">
             <div class="container">
-            <h2 class="reviews__titel">Отзывы</h2>
+            <h2 class="reviews__titel" id="reviews">Отзывы</h2>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -234,7 +235,7 @@
         <section class="find-me">
             <div class="container">
                 <div class="finnd-me__wrapper">
-                    <p class="finnd-me__txt">Давайте создадим что-нибудь вместе</p>
+                    <p class="finnd-me__txt" id="call-back">Давайте создадим что-нибудь вместе</p>
                     <button class="btn btn--call" type="button">Заказать звонок</button>
                 </div>
             </div>
