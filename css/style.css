@@ -51,11 +51,6 @@ hr {
 * 1. Correct the inheritance and scaling of font size in all browsers.
 * 2. Correct the odd `em` font sizing in all browsers.
 */
-pre {
-  font-size: 1em; /* 2 */
-  font-family: monospace, monospace; /* 1 */
-}
-
 /* Text-level semantics
   ========================================================================== */
 /**
@@ -88,13 +83,6 @@ strong {
 * 1. Correct the inheritance and scaling of font size in all browsers.
 * 2. Correct the odd `em` font sizing in all browsers.
 */
-code,
-kbd,
-samp {
-  font-size: 1em; /* 2 */
-  font-family: monospace, monospace; /* 1 */
-}
-
 /**
 * Add the correct font size in all browsers.
 */
@@ -145,7 +133,6 @@ textarea {
   margin: 0; /* 2 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
-  font-family: inherit; /* 1 */
 }
 
 /**
@@ -1047,7 +1034,6 @@ progress {
   justify-content: center;
   margin: 0;
   padding: 0;
-  font-family: Switzer;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1158,7 +1144,6 @@ progress {
 .card-work__up {
   display: flex;
   align-items: center;
-  font-family: Switzer;
   font-weight: 400;
   font-size: 32px;
   line-height: 130%;
