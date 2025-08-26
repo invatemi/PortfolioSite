@@ -11,9 +11,12 @@
     border: 1px solid #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.5s linear;
 
     &:hover{
         color: #FFFFFF;
+        transform: scale(1.03);
     }
 }
 

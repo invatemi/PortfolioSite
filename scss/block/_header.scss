@@ -75,6 +75,7 @@
 }
 
 .header-item__txt{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,4 +88,25 @@
     text-decoration: none;
     color: #FFFFFF;
 
+    &:hover{
+        color: #FFFFFF;
+    }
+
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: transparent;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 50%;
+    }
+
+    &:hover::before{
+        background-color: #D94100;
+    }
 }
