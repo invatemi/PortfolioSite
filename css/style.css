@@ -1158,6 +1158,7 @@ progress {
   gap: 53px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .card-work__txt {
