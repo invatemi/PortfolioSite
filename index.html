@@ -9,7 +9,9 @@
     <script type="module" src="./js/main.js"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <header class="header">
+        <h1 class="_visually-hidden">мой сайт</h1>
         <div class="container">
             <div class="header-wrapper">
                 <!-- логотип -->
@@ -33,7 +35,7 @@
                         </ul>
                     </nav>
                     <!-- кнопка контакты -->
-                    <a href="#call-back" class="btn btn--contact" type="button">Контакты</a>
+                    <a href="#call-back" class="btn btn--contact">Контакты</a>
                  </div>
             </div>
         </div>
@@ -41,6 +43,7 @@
 
     <main class="main">
         <section class="about-author">
+            <h2 class="visually-hidden">о авторе</h2>
             <div class="container">
                 <div class="about-author__wrapper">
                     <p class="about-author__txt">
@@ -51,7 +54,7 @@
                         <span class="about-author__txt-black">из города Воронеж</span>
                     </p>
 
-                    <a href="#call-back" class="btn btn--hire" type="button">Связаться со мной</a>
+                    <a href="#call-back" class="btn btn--hire">Связаться со мной</a>
                 </div>
             </div>
         </section>
@@ -233,6 +236,7 @@
         </section>
 
         <section class="find-me">
+            <h2 class="visually-hidden">контакты</h2>
             <div class="container">
                 <div class="finnd-me__wrapper">
                     <p class="finnd-me__txt" id="call-back">Давайте создадим что-нибудь вместе</p>
@@ -240,31 +244,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <form action="#" class="request">
-            <fieldset class="request-info">
-                <legend class="request-info__name visually-hidden">отправка данных</legend>
-                <div class="custom-input">
-                    <label class="custom-input__label" for="surname-fildset">Фамилия</label>
-                    <input class="custom-inout__fieldset" type="text" name="surname" id="surname-fildset">
-                </div>
-                <div class="custom-input">
-                    <label class="custom-input__label" for="name-fildset">Имя</label>
-                    <input class="custom-inout__fieldset" type="text" name="name" id="name-fildset">
-                </div>
-                <div class="custom-input">
-                    <label class="custom-input__label" for="email-fildset">eMail</label>
-                    <input class="custom-inout__fieldset" type="email" name="email" id="email-fildset">
-                </div>
-                <div class="custom-checkbox">
-                    <label class="custom-input__label">
-                        <input class="custom-inout__fieldset visually-hidden" type="checkbox">
-                    </label>
-                </div>
-
-                <button class="btn btn--submit" type="submit">Отправить</button>
-            </fieldset>
-        </form> -->
     </main>
 
     <footer class="footer">
@@ -286,5 +265,23 @@
             </div>
         </div>
     </footer>
+    <form action="http://localhost:3000/submit-form" method="POST" class="request">
+        <fieldset class="request-info">
+            <legend class="request-info__name visually-hidden">отправка данных</legend>
+            <div class="custom-input">
+                <label class="custom-input__label" for="name-fildset">Имя</label>
+                <input class="custom-inout__fieldset" type="text" name="name_application" id="name-fildset">
+            </div>
+            <div class="custom-input">
+                <label class="custom-input__label" for="phone-fildset">Номер телефона</label>
+                <input class="custom-inout__fieldset" type="tel" name="phone_application" id="phone-fildset">
+            </div>
+            <div class="custom-input">
+                <label class="custom-input__label" for="email-fildset">eMail</label>
+                <input class="custom-inout__fieldset" type="email" name="email_application" id="email-fildset">
+            </div>
+            <button class="btn btn--submit request__btn" type="submit">Отправить</button>
+        </fieldset>
+    </form>
 </body>
 </html>
