@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+
     <link rel="stylesheet" href="./css/style.css">
+    <!-- ! доделать потом -->
+    <script type="module" src="./js/components/renderReviewsCard.js"></script>
     <script type="module" src="./js/main.js"></script>
+
 </head>
 <body>
     <div class="overlay"></div>
@@ -68,7 +72,7 @@
                     </div>
 
                     <ul class="work__list">
-                        <li class="work__item">
+                        <!-- <li class="work__item">
                             <div class="card-work">
                                 <img src="./assets/img/card-img-1.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
                                     <p class="card-work__txt">
@@ -76,40 +80,7 @@
                                         <span class="card-work__bottom">Mobile App</span>
                                     </p>
                             </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-2.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-3.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-4.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -118,10 +89,25 @@
         <section class="services">
             <div class="container">
                 <div class="services__wrapper">
-                    <h2 class="services__titel" id="services">Услуги</h2>
+                    <div class="services__wrapper-full-information ">
+                        <h2 class="services__titel" id="services">Услуги</h2>
+                        <div class="services-information">
+                            <h2 class="services__information-titel">Заголовок</h2>
+                            <p class="services__information-description">Описание зоголовка</p>
+                            <p class="services__information-base">Основа</p>
+                            <p class="services__information-advantages"></p>
+                            <ul class="services__information-list">
+                                <li class="services__information-item">основа 1</li>
+                                <li class="services__information-item">основа 2</li>
+                                <li class="services__information-item">основа 3</li>
+                                <li class="services__information-item">основа 4</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
 
                     <ul class="services-list">
-                        <li class="services-item">
+                        <li class="services-item" id="item__web-desing">
                             <div class="card-services">
                                 <p class="card-services__number">01</p>
                                 <div class="card-services__inner">
@@ -130,7 +116,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="services-item">
+                        <li class="services-item" id="item__web-development">
                             <div class="card-services">
                                 <p class="card-services__number">02</p>
                                 <div class="card-services__inner">
@@ -139,7 +125,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="services-item">
+                        <li class="services-item" id="item__complex-sites">
                             <div class="card-services">
                                 <p class="card-services__number">03</p>
                                 <div class="card-services__inner">
@@ -152,14 +138,14 @@
                 </div>
             </div>
         </section>
-
-        <section class="reviews">
+        
+        <!-- <section class="reviews">
             <div class="container">
             <h2 class="reviews__titel" id="reviews">Отзывы</h2>
             <div class="swiper">
-                <!-- Additional required wrapper -->
+                
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+
                     <div class="swiper-slide">
                         <div class="card-reviews">
                                 <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
@@ -233,7 +219,7 @@
                 </div>
             </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="find-me">
             <h2 class="visually-hidden">контакты</h2>
@@ -252,13 +238,13 @@
                 <div class="footer-up__wrapper">
                     <ul class="footer-up__list">
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">Telegramm</a>
+                            <a href="https://t.me/Whir1p00l" class="footer-up__txt">Telegramm</a>
                         </li>
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">VK</a>
+                            <a href="https://vk.com/bigpistolpin" class="footer-up__txt">VK</a>
                         </li>
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">eMail</a>
+                            <a href="mailto:tomi223223@mail.ru?subject=Сотрудничество&body=Здравствуйте, я хотел бы обсудить проект" class="footer-up__txt">eMail</a>
                         </li>
                     </ul>
                 </div>

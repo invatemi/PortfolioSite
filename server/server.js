@@ -62,6 +62,26 @@ app.post("/submit-form", async (req, res) => {
   }
 });
 
+app.get("/get-project", async (req, res) => {
+  try {
+    const result = await pool.query("SELECT * FROM project");
+    res.json({ success: true, data: result.rows });
+  } catch (error) {
+    console.error("Ошибка сервера:", error);
+    res.status(500).json({ success: false, message: "Ошибка сервера" });
+  }
+});
+
+app.get("/get-reviews", async (req, res) => {
+  try {
+    const result = await pool.query("SELECT * FROM reviews");
+    res.json({ success: true, data: result.rows });
+  } catch (error) {
+    console.error("Ошибка сервера:", error);
+    res.status(500).json({ success: false, message: "Ошибка сервера" });
+  }
+});
+
 // Запуск сервера
 app.listen(port, () => {
   console.log(`🚀 Сервер запущен на http://localhost:${port}`);
