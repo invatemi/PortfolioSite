@@ -903,6 +903,7 @@ progress {
   margin: 0;
   padding: 7px;
   background-color: #232323;
+  color: #FFFFFF;
 }
 
 .custom-inout__fieldset::-moz-placeholder {
@@ -910,6 +911,7 @@ progress {
   font-size: 16px;
   line-height: 100%;
   color: #131118;
+  color: #FFFFFF;
 }
 
 .custom-inout__fieldset::placeholder {
@@ -917,6 +919,7 @@ progress {
   font-size: 16px;
   line-height: 100%;
   color: #131118;
+  color: #FFFFFF;
 }
 
 .footer {
