@@ -11,7 +11,7 @@ app.use(express.json());
 const pool = new Pool({
   host: "localhost",
   port: 5432,
-  database: "postgres",
+  database: "db",
   user: "postgres",
   password: "2003tomi3",
 });
@@ -33,10 +33,25 @@ app.post("/submit-form", async (req, res) => {
 
     console.log("Получены данные:", req.body);
 
-    // Вставляем в базу данных
+    // Получаем максимальный ID и увеличиваем на 1
+    const maxIdResult = await pool.query(
+      "SELECT MAX(id_applications) as max_id FROM applications"
+    );
+
+    const nextId = (maxIdResult.rows[0].max_id || 0) + 1;
+
+    const date_applications = new Date().toISOString(); // текущая дата и время в формате ISO
+
+    // Вставляем в базу данных с автоматическими полями
     const result = await pool.query(
-      "INSERT INTO applications (name_applications, phone_applications, email_applications) VALUES ($1, $2, $3) RETURNING *",
-      [name_application, phone_application, email_application]
+      "INSERT INTO applications (id_applications, name_applications, phone_applications, email_applications, date_applications) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+      [
+        nextId,
+        name_application,
+        phone_application,
+        email_application,
+        date_applications,
+      ]
     );
 
     console.log("Данные сохранены:", result.rows[0]);
