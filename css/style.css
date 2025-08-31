@@ -890,12 +890,11 @@ progress {
 
 @media (max-width: 480px) {
   .btn--contact {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 20px;
     line-height: 100%;
     text-decoration: none;
     color: #FFFFFF;
-    border: none;
     padding: 6px 12px;
   }
   #reviews {
@@ -945,7 +944,7 @@ progress {
   text-transform: uppercase;
 }
 
-.custom-inout__fieldset {
+.custom-input__fieldset {
   width: 445px;
   height: -moz-fit-content;
   height: fit-content;
@@ -957,7 +956,7 @@ progress {
   color: #FFFFFF;
 }
 
-.custom-inout__fieldset::-moz-placeholder {
+.custom-input__fieldset::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -965,7 +964,7 @@ progress {
   color: #FFFFFF;
 }
 
-.custom-inout__fieldset::placeholder {
+.custom-input__fieldset::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -1377,7 +1376,7 @@ progress {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 65px 31px;
   margin: 0;
   padding: 0;
@@ -2061,7 +2060,7 @@ progress {
   background-color: #232323;
 }
 
-.finnd-me__wrapper {
+.find-me__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2069,7 +2068,7 @@ progress {
   gap: 65px;
 }
 
-.finnd-me__txt {
+.find-me__txt {
   margin: 0;
   padding: 0;
   width: 1030px;
@@ -2088,10 +2087,10 @@ progress {
   .find-me {
     padding: 21px 41px;
   }
-  .finnd-me__wrapper {
+  .find-me__wrapper {
     gap: 16px;
   }
-  .finnd-me__txt {
+  .find-me__txt {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2105,7 +2104,7 @@ progress {
   }
 }
 @media (max-width: 768px) {
-  .finnd-me__txt {
+  .find-me__txt {
     width: -moz-fit-content;
     width: fit-content;
   }
