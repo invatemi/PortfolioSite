@@ -125,3 +125,42 @@
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
+
+@include vp-400{
+    .services{
+        padding: 21px;
+    }
+
+    .services__titel{
+        font-weight: 100;
+        font-size: 45px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+    .services__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services__wrapper-full-information{
+        display: none;
+    }
+}
+
+@include vp-768{
+    .services__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services__wrapper-full-information{
+        display: none;
+    }
+}

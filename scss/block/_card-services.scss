@@ -50,3 +50,23 @@
     letter-spacing: 0.01em;
     color: #ADADAD;
 }
+
+@include vp-400{
+    .card-services{
+        width: 310px;
+        height: fit-content;
+    }
+
+    .card-services__number{
+        margin: 0 0 15px 0;
+    }
+
+    .card-services__titel{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin: 0;
+    }
+}

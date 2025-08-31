@@ -44,3 +44,20 @@
     letter-spacing: 0.01em;
     color: #ADADAD;
 }
+
+@include vp-400{
+    .card-work__img{
+        width: 270px;
+        height: 270px;
+    }
+
+    .card-work{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@include vp-768 {
+    .card-work{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}

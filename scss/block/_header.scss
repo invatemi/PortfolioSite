@@ -111,3 +111,60 @@
         opacity: 1;
     }
 }
+
+@include vp-400{
+    .header{
+        padding: 15px;
+    }
+
+    .header__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-list{
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 170px;
+    }
+}
+
+@include vp-768 {
+    .header-logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-author__txt{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-author__txt-white{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

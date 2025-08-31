@@ -28,3 +28,31 @@
     text-align: center;
 
 }
+
+@include vp-400 {
+    .find-me{
+        padding: 21px 41px;
+    }
+
+    .finnd-me__wrapper{
+        gap: 16px;
+    }
+
+    .finnd-me__txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: fit-content;
+    }
+}
+
+@include vp-768 {
+    .finnd-me__txt{
+        width: fit-content;
+    }
+}

@@ -2,3 +2,18 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
+@include vp-400 {
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@include vp-768 {
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
