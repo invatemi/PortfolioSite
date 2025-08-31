@@ -164,3 +164,16 @@
         display: none;
     }
 }
+
+@include vp-1025{
+    .services__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services__wrapper-full-information{
+        display: none;
+    }
+}
