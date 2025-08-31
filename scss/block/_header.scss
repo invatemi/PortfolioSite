@@ -92,6 +92,11 @@
         color: #FFFFFF;
     }
 
+    &:focus-visible{
+        border: none;
+        outline: none;
+    }
+
     &::before{
         content:"";
         display: block;
@@ -107,7 +112,8 @@
         border-radius: 50%;
     }
 
-    &:hover::before{
+    &:hover::before,
+    &:focus-visible::before{
         opacity: 1;
     }
 }
