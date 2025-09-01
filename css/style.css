@@ -1442,6 +1442,16 @@ progress {
     align-items: center;
     justify-content: center;
   }
+  .work__inner-titel {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .work__inner-titel {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 .card-work {
   display: flex;
