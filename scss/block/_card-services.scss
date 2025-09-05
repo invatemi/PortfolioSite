@@ -5,6 +5,12 @@
     height: 335px;
     padding: 29px 49px 50px 41px;
     background-color: #232323;
+    outline: none;
+
+    &:hover{
+        transition: outline 0.5s ease;
+        outline: 1px solid #FFFFFF;
+    }
 }
 
 .card-services__number{
@@ -24,7 +30,7 @@
 }
 
 .card-services__titel{
-    margin: 0;
+    margin: 0 0 5px 0;
     padding: 0;
 
     font-weight: 400;
@@ -32,6 +38,7 @@
     line-height: 100%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .card-services__txt{
@@ -42,4 +49,24 @@
     line-height: 130%;
     letter-spacing: 0.01em;
     color: #ADADAD;
+}
+
+@include vp-400{
+    .card-services{
+        width: 310px;
+        height: fit-content;
+    }
+
+    .card-services__number{
+        margin: 0 0 15px 0;
+    }
+
+    .card-services__titel{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin: 0;
+    }
 }

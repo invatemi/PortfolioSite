@@ -4,7 +4,7 @@
     background-color: #232323;
 }
 
-.finnd-me__wrapper{
+.find-me__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     gap: 65px;
 }
 
-.finnd-me__txt{
+.find-me__txt{
     margin: 0;
     padding: 0;
     width: 1030px;
@@ -27,4 +27,38 @@
     color: #FFFFFF;
     text-align: center;
 
+}
+
+@include vp-400 {
+    .find-me{
+        padding: 21px 41px;
+    }
+
+    .find-me__wrapper{
+        gap: 16px;
+    }
+
+    .find-me__txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: fit-content;
+    }
+}
+
+@include vp-768 {
+    .find-me__txt{
+        width: fit-content;
+    }
+}
+
+@include vp-1025 {
+    .find-me__txt{
+        width: fit-content;
+    }
 }

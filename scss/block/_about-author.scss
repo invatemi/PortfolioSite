@@ -40,3 +40,59 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
 }
+
+@include vp-400{
+    .about-author__wrapper{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        padding: 21px 41px;
+    }
+
+    .about-author__txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .about-author__txt-black{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    }
+
+    .about-author__txt-white{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    }
+
+    .about-author__txt-img{
+        display: none;
+    }
+}
+
+@include vp-768 {
+    .about-author__txt{
+        width: fit-content;
+    }
+}
+
+@include vp-1025{
+    .about-author__txt{
+        width: fit-content;
+    }
+}

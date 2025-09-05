@@ -10,6 +10,14 @@
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.5s linear;
+
+    &:hover{
+        color: #FFFFFF;
+        transform: scale(1.03);
+    }
 }
 
 .btn--contact{
@@ -46,5 +54,65 @@
     padding: 16px 32px;
     background-color: #D94100;
     border: none;
+    outline: none;
 
+}
+
+.btn--submit{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+    color: #FFFFFF;
+    background-color: #D94100;
+    margin: 0;
+    padding: 16px 32px;
+    border: none;
+}
+
+@include vp-400{
+    .btn--contact{
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 100%;
+        text-decoration: none;
+        color: #FFFFFF;
+
+        padding: 6px 12px;
+    }
+
+    #reviews{
+        display: none;
+    }
+
+    .btn--hire{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 8px 16px;
+        border: none;
+        outline: none;
+    }
+
+    .btn--view{
+        display: none;
+        visibility: hidden;
+        padding: 8px 16px;
+    }
+
+    .btn--call{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 8px 16px;
+    }
+
+    .btn--submit{
+        padding: 8px 16px;
+    }    
+}
+
+@include vp-768 {
+    .btn--hire{
+        margin: 0 auto;
+    }
 }

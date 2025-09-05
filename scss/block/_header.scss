@@ -75,17 +75,102 @@
 }
 
 .header-item__txt{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
 
-    font-family: Switzer;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
     text-decoration: none;
     color: #FFFFFF;
 
+    &:hover{
+        color: #FFFFFF;
+    }
+
+    &:focus-visible{
+        border: none;
+        outline: none;
+    }
+
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: #D94100;
+        opacity: 0;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 50%;
+    }
+
+    &:hover::before,
+    &:focus-visible::before{
+        opacity: 1;
+    }
+}
+
+@include vp-400{
+    .header{
+        padding: 15px;
+    }
+
+    .header__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-list{
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 170px;
+    }
+}
+
+@include vp-768 {
+    .header-logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header-wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-author__txt{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-author__txt-white{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }

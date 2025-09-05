@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+
     <link rel="stylesheet" href="./css/style.css">
-    <script type="module" src="./js/components/main.js"></script>
+    <!-- ! доделать потом -->
+    <script type="module" src="./js/components/renderReviewsCard.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 </head>
 <body>
+    <div class="overlay"></div>
     <header class="header">
+        <h1 class="visually-hidden">мой сайт</h1>
         <div class="container">
             <div class="header-wrapper">
                 <!-- логотип -->
@@ -21,18 +28,15 @@
                     <nav class="header-nav">
                         <ul class="header-list">
                             <li class="header-item">
-                                <a href="#" class="header-item__txt">Проекты</a>
+                                <a href="#work" class="header-item__txt">Проекты</a>
                             </li>
                             <li class="header-item">
-                                <a href="#" class="header-item__txt">Услуги</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#" class="header-item__txt">Отзывы</a>
+                                <a href="#services" class="header-item__txt">Услуги</a>
                             </li>
                         </ul>
                     </nav>
                     <!-- кнопка контакты -->
-                    <button class="btn btn--contact" type="button">Контакты</button>
+                    <a href="#call-back" class="btn btn--contact">Контакты</a>
                  </div>
             </div>
         </div>
@@ -40,17 +44,18 @@
 
     <main class="main">
         <section class="about-author">
+            <h2 class="visually-hidden">о авторе</h2>
             <div class="container">
                 <div class="about-author__wrapper">
                     <p class="about-author__txt">
                         <span class="about-author__txt-black">Привет,</span>
-                        <img src="./assets/img/author.jpg" alt="картинка автора" width="160" height="96">
+                        <img class="about-author__txt-img" src="./assets/img/author.jpg" alt="картинка автора" width="160" height="96">
                         <span class="about-author__txt-black">я </span>
                         <span class="about-author__txt-white">Тимофей ваш разработчик </span>
                         <span class="about-author__txt-black">из города Воронеж</span>
                     </p>
 
-                    <button class="btn btn--hire" type="button">Связаться со мной</button>
+                    <a href="#call-back" class="btn btn--hire">Связаться со мной</a>
                 </div>
             </div>
         </section>
@@ -59,12 +64,12 @@
             <div class="container">
                 <div class="work__wrapper">
                     <div class="work__inner-txt">
-                        <h2 class="work__inner-titel">Проекты</h2>
-                        <button class="btn btn--view" type="button">Показать все</button>
+                        <h2 class="work__inner-titel" id="work">Проекты</h2>
+                        <button class="btn btn--view visually-hidden" type="button">Показать все</button>
                     </div>
 
                     <ul class="work__list">
-                        <li class="work__item">
+                        <!-- <li class="work__item">
                             <div class="card-work">
                                 <img src="./assets/img/card-img-1.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
                                     <p class="card-work__txt">
@@ -72,40 +77,7 @@
                                         <span class="card-work__bottom">Mobile App</span>
                                     </p>
                             </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-2.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-3.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="work__item">
-                            <div class="card-work">
-                                <img src="./assets/img/card-img-4.png" alt="картинка проекта" class="card-work__img" width="600" height="425">
-                                <div class="card-work__inner">
-                                    <p class="card-work__txt">
-                                        <span class="card-work__up">Project</span>
-                                        <span class="card-work__bottom">Mobile App</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -114,33 +86,48 @@
         <section class="services">
             <div class="container">
                 <div class="services__wrapper">
-                    <h2 class="services__titel">Services</h2>
+                    <div class="services__wrapper-full-information ">
+                        <h2 class="services__titel" id="services">Услуги</h2>
+                        <div class="services-information">
+                            <h2 class="services__information-titel">Заголовок</h2>
+                            <p class="services__information-description">Описание зоголовка</p>
+                            <p class="services__information-base">Основа</p>
+                            <p class="services__information-advantages"></p>
+                            <ul class="services__information-list">
+                                <li class="services__information-item">основа 1</li>
+                                <li class="services__information-item">основа 2</li>
+                                <li class="services__information-item">основа 3</li>
+                                <li class="services__information-item">основа 4</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
 
                     <ul class="services-list">
-                        <li class="services-item">
+                        <li class="services-item" id="item__web-desing">
                             <div class="card-services">
                                 <p class="card-services__number">01</p>
                                 <div class="card-services__inner">
                                     <h3 class="card-services__titel">Web Design</h3>
-                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                    <p class="card-services__txt">Создаем современные и понятные интерфейсы, которые нравятся пользователям. Делаем сайты визуально привлекательными и удобными, чтобы повысить конверсию и усилить ваш бренд.</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="services-item">
+                        <li class="services-item" id="item__web-development">
                             <div class="card-services">
                                 <p class="card-services__number">02</p>
                                 <div class="card-services__inner">
-                                    <h3 class="card-services__titel">Web Design</h3>
-                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                    <h3 class="card-services__titel">Web Development</h3>
+                                    <p class="card-services__txt">Превращаем готовый дизайн в работающий сайт. Пишем чистый код, обеспечиваем высокую скорость загрузки, корректное отображение на всех устройствах и надежную работу.</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="services-item">
+                        <li class="services-item" id="item__complex-sites">
                             <div class="card-services">
                                 <p class="card-services__number">03</p>
                                 <div class="card-services__inner">
-                                    <h3 class="card-services__titel">Web Design</h3>
-                                    <p class="card-services__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                    <h3 class="card-services__titel">Complex Sites</h3>
+                                    <p class="card-services__txt">Разрабатываем мощные веб-платформы и сервисы с индивидуальной логикой: интернет-магазины, маркетплейсы, корпоративные порталы и системы управления бизнес-процессами.</p>
                                 </div>
                             </div>
                         </li>
@@ -148,14 +135,14 @@
                 </div>
             </div>
         </section>
-
-        <section class="reviews">
+        
+        <!-- <section class="reviews">
             <div class="container">
-            <h2 class="reviews__titel">Отзывы</h2>
+            <h2 class="reviews__titel" id="reviews">Отзывы</h2>
             <div class="swiper">
-                <!-- Additional required wrapper -->
+                
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+
                     <div class="swiper-slide">
                         <div class="card-reviews">
                                 <p class="card-reviews__txt">"Lorem ipsum dolor sit amet, 
@@ -229,12 +216,13 @@
                 </div>
             </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="find-me">
+            <h2 class="visually-hidden">контакты</h2>
             <div class="container">
-                <div class="finnd-me__wrapper">
-                    <p class="finnd-me__txt">Давайте создадим что-нибудь вместе</p>
+                <div class="find-me__wrapper">
+                    <p class="find-me__txt" id="call-back">Давайте создадим что-нибудь вместе</p>
                     <button class="btn btn--call" type="button">Заказать звонок</button>
                 </div>
             </div>
@@ -247,18 +235,36 @@
                 <div class="footer-up__wrapper">
                     <ul class="footer-up__list">
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">Telegramm</a>
+                            <a href="https://t.me/Whir1p00l" class="footer-up__txt">Telegramm</a>
                         </li>
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">VK</a>
+                            <a href="https://vk.com/bigpistolpin" class="footer-up__txt">VK</a>
                         </li>
                         <li class="footer-up__item">
-                            <a href="#" class="footer-up__txt">eMail</a>
+                            <a href="mailto:tomi223223@mail.ru?subject=Сотрудничество&body=Здравствуйте, я хотел бы обсудить проект" class="footer-up__txt">eMail</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <form action="http://localhost:3000/submit-form" method="POST" class="request">
+        <fieldset class="request-info">
+            <legend class="request-info__name visually-hidden">отправка данных</legend>
+            <div class="custom-input">
+                <label class="custom-input__label" for="name-fildset">Имя</label>
+                <input class="custom-input__fieldset" type="text" name="name_application" id="name-fildset">
+            </div>
+            <div class="custom-input">
+                <label class="custom-input__label" for="phone-fildset">Номер телефона</label>
+                <input class="custom-input__fieldset" type="tel" name="phone_application" id="phone-fildset">
+            </div>
+            <div class="custom-input">
+                <label class="custom-input__label" for="email-fildset">eMail</label>
+                <input class="custom-input__fieldset" type="email" name="email_application" id="email-fildset">
+            </div>
+            <button class="btn btn--submit request__btn" type="submit">Отправить</button>
+        </fieldset>
+    </form>
 </body>
 </html>
