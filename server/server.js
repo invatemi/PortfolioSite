@@ -33,7 +33,7 @@ app.post("/submit-form", async (req, res) => {
 
     console.log("Получены данные:", req.body);
 
-    // Получаем максимальный ID и увеличиваем на 1
+    
     const maxIdResult = await pool.query(
       "SELECT MAX(id_applications) as max_id FROM applications"
     );
